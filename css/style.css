@@ -9,8 +9,16 @@ body {
   background: url('../img/bg.jpg');
 }
 .header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
   text-transform: uppercase;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .header-main {
   font-size: 3rem;
@@ -22,6 +30,12 @@ body {
   font-size: 2.4rem;
   margin-top: 0;
   color: #0bbaf0;
+}
+.header-line {
+  margin-bottom: 3rem;
+  width: 10rem;
+  height: 2px;
+  background-color: #dcdcdc;
 }
 .item {
   margin-top: .5rem;
@@ -54,4 +68,8 @@ body {
 }
 #content-1 {
   display: block;
+}
+.akkordion {
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
 }

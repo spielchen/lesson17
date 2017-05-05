@@ -10,9 +10,10 @@ body{
 	background: url('../img/bg.jpg');
 }
 .header{
+		display: flex;
 		text-align: center;
-
 		text-transform: uppercase;
+		justify-content:center;
 		&-main{
 			font-size: 3rem;
 			margin-top: 5rem;
@@ -23,6 +24,12 @@ body{
 			font-size: 2.4rem;
 			margin-top: 0;
 			color:@dark;
+		}
+		&-line{
+			margin-bottom: 3rem;
+			width: 10rem;
+			height: 2px;
+			background-color: rgb(220, 220, 220)
 		}
 }
 .item{
@@ -38,6 +45,7 @@ body{
 	}
 }
 .content-item{
+	
 	display: none;
 	left:-2.5%;
 	transform:translateX(2.5%);
@@ -54,4 +62,7 @@ body{
 }
 #content-1{
 	display: block;
+}
+.akkordion{
+	transition: all 0.5s;
 }
